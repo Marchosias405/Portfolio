@@ -115,8 +115,8 @@ export const projects = [
       { name: 'scss',    color: 'pink-text-gradient'  },
     ],
     image: reporting,
-    repo:  'https://github.com/shaqdeff/Leaderboard',
-    demo:  'https://shaqdeff.github.io/Leaderboard/',
+    repo:  'https://github.com/Yunhh-Hahn/272-Map-Assignment',
+    demo:  'https://github.com/Yunhh-Hahn/272-Map-Assignment/blob/main/document/C272%20Map%20test.pdf',
   },
   {
     id: 'project-3',
