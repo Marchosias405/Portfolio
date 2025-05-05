@@ -16,7 +16,8 @@ import sfu from './assets/backgrounds/sfu.jpg';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0">
+      {/* Prevent horizontal overflow on mobile */}
+      <div className="relative z-0 overflow-x-hidden">
         <div>
           <Navbar />
           <Hero />
