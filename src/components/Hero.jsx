@@ -81,13 +81,15 @@ const Hero = () => {
 
         {/* Profile image */}
         <div>
+
           <img
-            className="absolute bottom-0 ml-[40vw] 
-            lg:ml-[65vw] md:ml-[50vw] xmd:ml-[50vw] 2xl:ml-[70vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="absolute bottom-0
+                      2xl:ml-[75vw] lg:ml-[80vw] xmd:ml-[65vw] md:ml-[75vw] sm:ml-[65vw] ml-[55vw]
+                      xl:h-[80vh] md:h-[55vh] sm:h-[50vh]"
             src={kazi}
             alt="kazi"
           />
+
         </div>
       </section>
     </>
