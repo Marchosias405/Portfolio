@@ -84,8 +84,8 @@ const Hero = () => {
 
           <img
             className="absolute bottom-0
-                      2xl:ml-[75vw] lg:ml-[80vw] xmd:ml-[65vw] md:ml-[75vw] sm:ml-[65vw] ml-[55vw]
-                      xl:h-[80vh] md:h-[55vh] sm:h-[50vh]"
+                      2xl:ml-[75vw] lg:ml-[80vw] xmd:ml-[65vw] md:ml-[75vw] sm:ml-[65vw] ml-[55vw] h-[55vh]
+                      xl:h-[85vh] md:h-[70vh] sm:h-[60vh]"
             src={kazi}
             alt="kazi"
           />
