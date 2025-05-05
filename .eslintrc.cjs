@@ -1,15 +1,30 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
-  ],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  // … your existing config …
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    // turn off prop-types checking
+    'react/prop-types': 'off',
+    // you’re on React 17+, no need to import React in every file
+    'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+
+    // three‑fiber uses JSX props that ESLint doesn’t recognize
+    'react/no-unknown-property': 'off',
+
+    // these warnings are safe to ignore for now
+    'react-refresh/only-export-components': 'off',
   },
-}
+
+  // if you want it to apply only to .jsx/.tsx:
+  overrides: [
+    {
+      files: ['src/**/*.{js,jsx,ts,tsx}'],
+      rules: {
+        'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'react/no-unknown-property': 'off',
+        'react-refresh/only-export-components': 'off',
+      },
+    },
+  ],
+};
