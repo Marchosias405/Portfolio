@@ -42,7 +42,7 @@ const Footer = () => (
         className="flex items-center gap-2 text-white hover:text-gray-300 transition"
       >
         <i className="fas fa-envelope text-2xl"></i>
-        <span>kaziboniamin402@gmail.com</span>
+        <span>kaziboniamin185@gmail.com</span>
       </a>
     </div>
   </footer>

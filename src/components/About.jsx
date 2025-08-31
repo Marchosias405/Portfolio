@@ -39,9 +39,10 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I’m Kazi Boni Amin, a Computing Science major at SFU with an ISO/IEC 27001:2022 Lead Auditor certification and eyes on CISA and Security+. 
-        I’ve built full-stack apps in Next.js/React, crafted WordPress sites, and developed security-focused tools in Node.js. 
-        Outside coding, I tutor STEM learners and manage operations at The UPS Store—ready to help your team stay innovative and compliant.
+          I’m Kazi Boni Amin, a Computing Science student at SFU with an ISO/IEC 27001:2022 Lead Auditor certification and preparing for CISA.  
+          I volunteer as a Data Analyst at the Crisis Centre of BC, optimizing GA4, GTM, and SEO to improve digital outreach.  
+          Alongside this, I’ve built full-stack apps in React/Node.js and continue to grow toward a career at the intersection of compliance, data, and cloud systems.  
+
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

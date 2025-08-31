@@ -21,7 +21,11 @@ const ProjectCard = ({
   handleClick,
 }) => {
   const SourceIcon = repoIcon || github;
-  const isSpecial = name === 'Laughing with Leaves' || name === 'Call Management System';
+  const isSpecial =
+    ['Laughing with Leaves', 'Call Management System', 'Enrollment Rush'].includes(name);
+
+  // local state to control the demo button icon (avoids global DOM queries)
+  const [btnIconSrc, setBtnIconSrc] = useState(pineapple);
 
   return (
     <motion.div
@@ -92,15 +96,11 @@ const ProjectCard = ({
             <button
               onClick={() => window.open(demo, '_blank')}
               className="live-demo flex items-center gap-1 py-3 px-4 rounded-[10px] glassmorphism font-beckman font-bold text-timberWolf text-[14px] sm:text-[16px] w-[125px] sm:w-[138px] h-[46px] sm:h-[50px] hover:bg-battleGray hover:text-eerieBlack transition duration-200 ease-in-out"
-              onMouseEnter={() => {
-                document.querySelector('.btn-icon').src = pineappleHover;
-              }}
-              onMouseLeave={() => {
-                document.querySelector('.btn-icon').src = pineapple;
-              }}
+              onMouseEnter={() => setBtnIconSrc(pineappleHover)}
+              onMouseLeave={() => setBtnIconSrc(pineapple)}
             >
               <img
-                src={pineapple}
+                src={btnIconSrc}
                 alt="live demo"
                 className="btn-icon w-[30px] sm:w-[34px] h-[30px] sm:h-[34px] object-contain"
               />
@@ -119,7 +119,6 @@ const Projects = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        {/* <p className={styles.sectionSubText}>Case Studies</p> */}
         <h2 className={styles.sectionHeadTextLight}>Projects.</h2>
       </motion.div>
 

@@ -19,7 +19,7 @@ import mentorl        from './icons/mentorl.png';
 import frontend       from './icons/frontend.png';
 import crowdl         from './icons/crowdl.png';
 import github         from './icons/github.png';
-import GD             from './icons/GD.png';            // Google Drive icon
+import GD             from './icons/GD.png';            
 import close          from './icons/close.png';
 import download       from './icons/download.png';
 import downloadHover  from './icons/downloadHover.png';
@@ -29,6 +29,8 @@ import menu           from './icons/menu.png';
 import resume         from './icons/resume.png';
 import send           from './icons/send.png';
 import sendHover      from './icons/sendHover.png';
+import analytics      from './icons/analytics.png';
+
 
 // Tech icons
 import css        from './tech/css.png';
@@ -43,6 +45,8 @@ import cIcon      from './tech/c.png';
 import cppIcon    from './tech/cpp.png';
 import pythonIcon from './tech/python.png';
 import isoIcon    from './tech/iso.png';
+import Docker     from './tech/docker.png';
+import postgres   from './tech/postgresql.png';
 
 // Company logos
 import coverhunt  from './company/coverhunt.png';
@@ -56,6 +60,7 @@ import reporting  from './projects/Reporting.png';
 import fugo       from './projects/Fugo.png';
 import roadsDuel  from './projects/RoadDuel.jpeg';
 import nyeusiImg  from './projects/nyeusi.png';
+import enrollmentRush from './projects/EnrollmentRush.png';
 
 export {
   // backgrounds
@@ -84,6 +89,7 @@ export {
   resume,
   send,
   sendHover,
+  analytics,
   // tech
   css,
   next,
@@ -98,6 +104,8 @@ export {
   cppIcon as cpp,
   pythonIcon as python,
   isoIcon as iso,
+  Docker,
+  postgres,
   // company
   coverhunt,
   dcc,
@@ -108,5 +116,6 @@ export {
   reporting,
   fugo,
   roadsDuel,
+  enrollmentRush,
   nyeusiImg as nyeusi,
 };

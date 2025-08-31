@@ -4,7 +4,7 @@ import {
   frontend,
   auditl,
   crowdl,
-  mentorl,
+  // mentorl,
   javascript,
   html,
   css,
@@ -22,12 +22,17 @@ import {
   kelhel,
   microverse,
   GD,
+  enrollmentRush,
+  analytics,
+  Docker,
+  postgres,
 } from '../assets';
 
 import rollCall  from '../assets/projects/RollCall.png';
 import reporting from '../assets/projects/Reporting.png';
 import fugo      from '../assets/projects/Fugo.png';
-import roadsDuel from '../assets/projects/RoadDuel.jpeg';
+// import roadsDuel from '../assets/projects/RoadDuel.jpeg';
+
 import LLL       from '../assets/projects/LLL.png';
 
 export const navLinks = [
@@ -40,7 +45,7 @@ export const services = [
   { title: 'Frontend Development', icon: frontend },
   { title: 'IT Compliance',        icon: auditl   },
   { title: 'Project Management',   icon: crowdl   },
-  { title: 'Mentoring',            icon: mentorl  },
+  { title: 'Data Analytics',            icon: analytics  },
 ];
 
 export const technologies = [
@@ -56,45 +61,64 @@ export const technologies = [
   { name: 'C++',          icon: cpp    },
   { name: 'Python',       icon: python },
   { name: 'ISO 27001',    icon: iso    },
+  { name: 'postgresql',       icon: postgres },
 ];
+
+// replace the existing `experiences` array with this
 
 export const experiences = [
   {
-    title: 'Cofounder and WordPress Site Administrator',
-    company_name: 'Surge Studios',
+    title: "Afterschool Program Instructor",
+    company_name: "Professor Puffin's Challenge Club",
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Jun 2023 – Jan 2025',
+    date: 'Aug 2024 - Mar 2025',
   },
   {
-    title: 'Afterschool Program Instructor',
-    company_name: 'Professor Puffins Challenge Club',
+    title: 'Tutor & Academic Coach',
+    company_name: 'VICI Learning',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Aug 2024 – Mar 2025',
+    date: 'Apr 2025 - Jun 2025',
   },
   {
     title: 'Relief Manager & Sales Associate',
     company_name: 'The UPS Store',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'Feb 2024 – Present',
+    date: 'Feb 2024 - Present',
   },
   {
-    title: 'Tutor & Academic Coach',
-    company_name: 'VICI Learning',
+    title: 'Volunteer Data Analyst',
+    company_name:
+      'The Crisis Intervention and Suicide Prevention Centre of British Columbia',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Apr 2025 – Present',
+    date: 'Jul 2025 - Present',
   },
 ];
+
 
 export const projects = [
   {
     id: 'project-1',
+    name: 'Enrollment Rush',
+    description:
+      'Multiplayer strategy game with lobby, real-time course grabs, round sync, and dynamic scoring inspired by SFU enrollment.',
+    tags: [
+      { name: 'nextjs',  color: 'blue-text-gradient' },
+      { name: 'supabase', color: 'green-text-gradient' },
+      { name: 'css',      color: 'pink-text-gradient' },
+    ],
+    image: enrollmentRush, // make sure this matches the export from src/assets/index.js
+    repo:  'https://github.com/nilocnus/enrolmentrush', // update with your repo
+    demo:  'https://www.youtube.com/watch?v=nVZTqTUhgCc', // update with your demo or drive link
+  },
+  {
+    id: 'project-2',
     name: 'RollCall',
     description:
-      'A Next.js/React web app that streamlines attendance tracking for after-school programs, offering instructors real-time updates and coordinators a unified dashboard for monitoring participation.',
+      'Next.js/React app for after-school programs with real-time attendance tracking and a unified coordinator dashboard',
     tags: [
       { name: 'react',   color: 'blue-text-gradient'  },
       { name: 'nextjs',  color: 'green-text-gradient' },
@@ -105,7 +129,7 @@ export const projects = [
     demo:  'https://drive.google.com/file/d/1Afc_rQp3xi14XXPany3SbFctcGm9uyR4/view',
   },
   {
-    id: 'project-2',
+    id: 'project-3',
     name: 'Call Management System',
     description:
       'Emergency call system with interactive maps, real-time geocoding, and secure CRUD for streamlined incident reporting and monitoring.',
@@ -119,7 +143,7 @@ export const projects = [
     demo:  'https://github.com/Yunhh-Hahn/272-Map-Assignment/blob/main/document/C272%20Map%20test.pdf',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'Fu-Go Défense',
     description:
       'A game where players control a military cannon to shoot down incoming FuGo balloons.',
@@ -132,21 +156,21 @@ export const projects = [
     repo:  'https://github.com/Marchosias405/Fu-Go-D-fense',
     demo:  'https://marchosias405.github.io/Fu-Go-D-fense/',
   },
-  {
-    id: 'project-4',
-    name: 'Road Duel',
-    description:
-      'An apocalyptic-themed board game where players navigate through 64 intersections and three zones to reach the antidote point first.',
-    tags: [
-      { name: 'react',      color: 'blue-text-gradient' },
-      { name: 'apocalypse', color: 'green-text-gradient' },
-      { name: 'boardgame',  color: 'pink-text-gradient'  },
-    ],
-    image: roadsDuel,
-    repo:  'https://drive.google.com/file/d/1-KElLoPfPt9Y9sUjU8dCneCRdHSqYOY2/view?usp=sharing',
-    demo:  'https://drive.google.com/file/d/1EC_dnz6AWKuQlvhrIIMbWlN8229SKgmz/view?usp=sharing',
-    repoIcon: GD,
-  },
+  // {
+  //   id: 'project-4',
+  //   name: 'Road Duel',
+  //   description:
+  //     'An apocalyptic-themed board game where players navigate through 64 intersections and three zones to reach the antidote point first.',
+  //   tags: [
+  //     { name: 'react',      color: 'blue-text-gradient' },
+  //     { name: 'apocalypse', color: 'green-text-gradient' },
+  //     { name: 'boardgame',  color: 'pink-text-gradient'  },
+  //   ],
+  //   image: roadsDuel,
+  //   repo:  'https://drive.google.com/file/d/1-KElLoPfPt9Y9sUjU8dCneCRdHSqYOY2/view?usp=sharing',
+  //   demo:  'https://drive.google.com/file/d/1EC_dnz6AWKuQlvhrIIMbWlN8229SKgmz/view?usp=sharing',
+  //   repoIcon: GD,
+  // },
   {
     id: 'project-5',
     name: 'Laughing with Leaves',
