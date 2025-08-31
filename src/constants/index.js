@@ -69,7 +69,7 @@ export const technologies = [
 export const experiences = [
   {
     title: "Afterschool Program Instructor",
-    company_name: "Professor Puffin's Challenge Club",
+    company_name: "Professor Puffins Challenge Club",
     icon: coverhunt,
     iconBg: '#333333',
     date: 'Aug 2024 - Mar 2025',
